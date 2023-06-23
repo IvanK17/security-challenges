@@ -1,4 +1,3 @@
-<!-- resources/views/cars/create.blade.php -->
 <!DOCTYPE html>
 <html>
 <head>

@@ -1,48 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Car List</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <style>
-        body {
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #343a40;
-            color: white;
-        }
-
-        .card {
-            margin: 20px;
-            padding: 20px;
-            width: 100%;
-            max-width: 800px;
-            background-color: #212529;
-        }
-
-        .card-header {
-            color: white;
-        }
-
-        .btn-primary {
-            background-color: #007bff;
-        }
-
-        table {
-            color: white;
-        }
-
-        th {
-            color: white;
-        }
-
-        td {
-            color: white;
-        }
-    </style>
-</head>
-<body>
+<x-app-layout>
 <div class="card">
     <div class="card-header">
         <h1 class="text-center">Car List</h1>
@@ -78,5 +34,4 @@
         </tbody>
     </table>
 </div>
-</body>
-</html>
+</x-app-layout>
