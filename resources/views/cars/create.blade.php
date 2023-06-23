@@ -41,7 +41,7 @@
             <label for="year">Year:</label>
             <input type="number" name="year" id="year" class="form-control" required>
         </div>
-        <button type="submit" class="btn btn-primary">Add Car</button>
+        <button type="submit" class="btn btn-primary">Add New Car</button>
     </form>
 </div>
 </body>
