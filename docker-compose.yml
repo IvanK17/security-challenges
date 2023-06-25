@@ -1,0 +1,38 @@
+version: '3'
+services:
+    web:
+        build:
+            context: .
+        volumes:
+            - .:/var/www/html
+        ports:
+            - "8082:80"
+        networks:
+            - my-network
+        depends_on:
+            - mysql
+
+    mysql:
+        container_name: database
+        image: mysql:8
+        environment:
+            MYSQL_ROOT_HOST: "%"
+            MYSQL_ROOT_PASSWORD: "secret"
+            MYSQL_DATABASE: "docker-crud-project"
+        networks:
+            - my-network
+
+    pma:
+        depends_on:
+            - mysql
+        image: phpmyadmin:latest
+        ports:
+            - "8080:80"
+        environment:
+            PMA_HOST: mysql
+        networks:
+            - my-network
+
+networks:
+    my-network:
+        driver: bridge
